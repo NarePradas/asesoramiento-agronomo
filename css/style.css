@@ -268,7 +268,7 @@ p, li, span {
   }
 
   .index h1 {
-    font-size: 1.5rem;  
+    font-size: 1.9rem;  
   }
 
   .index p {
@@ -499,7 +499,7 @@ p, li, span {
 a{color:var(--brand-2);text-decoration:none}
 .wrap{max-width:1200px;margin:0 auto;padding:24px}
 .hero{display:grid;gap:18px;grid-template-columns:1.3fr .7fr;align-items:center;margin-top:8px}
-.hero-card{background:radial-gradient(1200px 400px at 10% -10%,rgba(77,212,172,.12),transparent 40%),var(--card);border:1px solid rgba(255,255,255,.06);padding:28px;border-radius:calc(var(--radius) + 8px);box-shadow:var(--shadow);text-align: center;}
+.hero-card{background:radial-gradient(1000px 400px at 10% -10%,rgba(77,212,172,.12),transparent 40%),var(--card);border:1px solid rgba(255,255,255,.06);padding:28px;border-radius:calc(var(--radius) + 8px);box-shadow:var(--shadow);text-align: center;}
 .kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
 .kpi{background:rgba(132, 133, 132, 0.646);border:1px solid rgb(255, 255, 255);padding:14px;border-radius:14px;text-align:center}
 .kpi b{font-size:22px;display:block}
@@ -594,6 +594,7 @@ table{width:100%;border-spacing:0;background:var(--card);border:1px solid rgba(2
 thead th{position:sticky;top:0;color:white;background:#38b2ac;padding:12px;border-bottom:2px solid rgba(255,255,255,.08);text-align:left;font-weight:600;font-size:14px;cursor:pointer}
 tbody td{padding:12px;border-bottom:1px solid rgba(255,255,255,.05);font-size:14px}
 tbody tr:hover{background:#38b2ac}
+
 @media (max-width: 768px) {
   #tablaRindes {
     display: block;
