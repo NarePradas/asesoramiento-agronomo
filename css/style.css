@@ -499,7 +499,7 @@ p, li, span {
 a{color:var(--brand-2);text-decoration:none}
 .wrap{max-width:1200px;margin:0 auto;padding:24px}
 .hero{display:grid;gap:18px;grid-template-columns:1.3fr .7fr;align-items:center;margin-top:8px}
-.hero-card{background:radial-gradient(1200px 400px at 10% -10%,rgba(77,212,172,.12),transparent 40%),var(--card);border:1px solid rgba(255,255,255,.06);border-radius:calc(var(--radius) + 8px);box-shadow:var(--shadow);text-align: center;}
+/* .hero-card{background:radial-gradient(1200px 400px at 10% -10%,rgba(77,212,172,.12),transparent 40%),var(--card);border:1px solid rgba(255,255,255,.06);border-radius:calc(var(--radius) + 8px);box-shadow:var(--shadow);text-align: center;} */
 .kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
 .kpi{background:rgba(132, 133, 132, 0.646);border:1px solid rgb(255, 255, 255);padding:14px;border-radius:14px;text-align:center}
 .kpi b{font-size:22px;display:block}
@@ -519,7 +519,7 @@ section { padding: 60px 10px; position: relative; width: 100%; color:#fff; }
   @media(max-width:768px){ .card { flex:1 1 100%; } }
   @media (max-width: 768px) {
   .hero-card {
-    padding: 20px; /* menos padding */
+    padding: 10px; /* menos padding */
     border-radius: calc(var(--radius) + 4px);
     font-size: 0.95rem; /* texto más chico */
     background: radial-gradient(
