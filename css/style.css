@@ -184,6 +184,12 @@ p, li, span {
   text-decoration: none;
   transition: color 0.3s ease;
 }
+@media (max-width: 991px) {
+  .navbar-collapse {
+    max-height: 90vh;    
+    overflow-y: auto;   
+  }
+}
 
 .index {
   position: relative;
