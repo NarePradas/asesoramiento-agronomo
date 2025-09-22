@@ -519,7 +519,6 @@ section { padding: 60px 10px; position: relative; width: 100%; color:#fff; }
   @media(max-width:768px){ .card { flex:1 1 100%; } }
   @media (max-width: 768px) {
   .hero-card {
-    padding: 10px; /* menos padding */
     border-radius: calc(var(--radius) + 4px);
     font-size: 0.95rem; /* texto más chico */
     background: radial-gradient(
