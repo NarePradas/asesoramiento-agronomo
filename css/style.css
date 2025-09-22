@@ -268,7 +268,7 @@ p, li, span {
   }
 
   .index h1 {
-    font-size: 1.1rem;  
+    font-size: 1.5rem;  
   }
 
   .index p {
@@ -396,6 +396,18 @@ p, li, span {
   transform: translateZ(0);
   will-change: transform;
   transition: transform 0.2s ease-out;
+
+}
+@media (max-width: 768px) {
+ 
+  .indexproductos img.cultivo {
+    width: 100%;      
+  }
+
+  .indexproductos .btn {
+    padding: 0.7rem 1.4rem; 
+    font-size: 0.9rem;
+  }
 }
 .indexproductos .btn {
   position: relative;
@@ -505,7 +517,19 @@ section { padding: 60px 10px; position: relative; width: 100%; color:#fff; }
   .btn { display:inline-block; margin-top:16px; padding:10px 20px; background:#ff6600; color:#fff; border-radius:6px; text-decoration:none; }
   select, input { padding:6px; margin-right:10px; margin-bottom:10px; border-radius: 15px; }
   @media(max-width:768px){ .card { flex:1 1 100%; } }
-
+  @media (max-width: 768px) {
+  .hero-card {
+    padding: 20px; /* menos padding */
+    border-radius: calc(var(--radius) + 4px);
+    font-size: 0.95rem; /* texto más chico */
+    background: radial-gradient(
+        800px 300px at 10% -10%,
+        rgba(77, 212, 172, 0.15),
+        transparent 50%
+      ),
+      var(--card);
+  }
+}
 .tag{display:inline-block;background:rgba(0, 0, 0, 0.872);border:1px solid rgba(253, 253, 253, 0.959);padding:4px 8px;border-radius:999px;font-size:12px;color:#cfe1ff;margin-right:6px}
 /* SECCIÓN VARIEDADES */
 .section {
@@ -570,6 +594,13 @@ table{width:100%;border-spacing:0;background:var(--card);border:1px solid rgba(2
 thead th{position:sticky;top:0;color:white;background:#38b2ac;padding:12px;border-bottom:2px solid rgba(255,255,255,.08);text-align:left;font-weight:600;font-size:14px;cursor:pointer}
 tbody td{padding:12px;border-bottom:1px solid rgba(255,255,255,.05);font-size:14px}
 tbody tr:hover{background:#38b2ac}
+@media (max-width: 768px) {
+  #tablaRindes {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
 
 /* Acordeón */
 details{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:14px;margin-bottom:10px}
@@ -687,10 +718,15 @@ details summary{cursor:pointer;font-weight:600}
     transform: scale(1.05);
   }
     .container {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 0 1rem;
     }
+    @media (max-width: 768px) {
+  .container .grid {
+    grid-template-columns: 1fr; /* en tablets/celulares, 1 card por fila */
+  }
+}
     
     .text-center {
         text-align: center;
@@ -1375,14 +1411,16 @@ color: #000000;
     .contacto-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 20px;
         margin-bottom: 60px;
+        margin:20px 0;
     }
     .contacto-info {
         background: rgba(255, 255, 255, 0.95);
-        padding: 40px;
+        padding: 20px;
         border-radius: 15px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+         margin-bottom: 15px;
     }
     .contacto-info h3 {
         color: black;
@@ -1415,9 +1453,10 @@ color: #000000;
 
     .contacto-form {
         background: rgba(255, 255, 255, 0.95);
-        padding: 40px;
+        padding: 20px;
         border-radius: 15px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        margin-bottom: 15px;
     }
 
     .contacto-form h3 {
@@ -1484,7 +1523,22 @@ color: #000000;
         transform: translateY(-2px);
         box-shadow: 0 8px 25px rgba(107, 142, 35, 0.3);
     }
+@media (max-width: 480px) {
+  .contacto-form label {
+    font-size: 0.9rem;
+  }
 
+  .contacto-form input,
+  .contacto-form select,
+  .contacto-form textarea {
+    font-size: 0.85rem;
+  }
+
+  .btn-enviar {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
 
     @media (max-width: 768px) {
         .contacto-grid {
