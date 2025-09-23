@@ -441,7 +441,7 @@ p, li, span {
 }
 
 .argenetics-link:hover {
-    color: #0d7f19e8; /* Verde más claro al pasar el mouse */
+    color: #0d7f19e8; 
     text-decoration: underline;
 }
     
@@ -468,7 +468,7 @@ p, li, span {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(144, 143, 143, 0.059); /* oscurece la imagen para legibilidad */
+  background: rgba(144, 143, 143, 0.059); 
   z-index: 1;
 }
 .argenetics-content {
@@ -505,7 +505,6 @@ p, li, span {
 a{color:var(--brand-2);text-decoration:none}
 .wrap{max-width:1200px;margin:0 auto;padding:24px}
 .hero{display:grid;gap:18px;grid-template-columns:1.3fr .7fr;align-items:center;margin-top:8px}
-/* .hero-card{background:radial-gradient(1200px 400px at 10% -10%,rgba(77,212,172,.12),transparent 40%),var(--card);border:1px solid rgba(255,255,255,.06);border-radius:calc(var(--radius) + 8px);box-shadow:var(--shadow);text-align: center;} */
 .kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
 .kpi{background:rgba(132, 133, 132, 0.646);border:1px solid rgb(255, 255, 255);padding:14px;border-radius:14px;text-align:center}
 .kpi b{font-size:22px;display:block}
@@ -515,9 +514,7 @@ section { padding: 60px 10px; position: relative; width: 100%; color:#fff; }
   .grid { display: flex; flex-wrap: wrap; gap: 16px; }
   .card { background: rgba(0,0,0,0.6); padding: 16px; border-radius: 10px; flex: 1 1 calc(33% - 16px); box-sizing: border-box; }
   .pill { background: #fff; color:#000; display:inline-block; padding:4px 8px; border-radius:4px; margin:4px 0; }
-  table { width:100%; border-collapse: collapse; margin-top: 40px; background:#fff; color:#000; }
-  th, td { border: 1px solid #ccc; padding:8px; text-align:left; }
-  th { cursor:pointer; background:#eee; }
+ 
   .muted { color:#024f21; }
   .mutedd{color:white;}
   .btn { display:inline-block; margin-top:16px; padding:10px 20px; background:#ff6600; color:#fff; border-radius:6px; text-decoration:none; }
@@ -592,21 +589,6 @@ section { padding: 60px 10px; position: relative; width: 100%; color:#fff; }
 .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
 .card h3{margin:0 0 6px}
 
-/* Tabla */
-.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
-input[type="search"], select{background:#38b2ac;color:white;border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px}
-table{width:100%;border-spacing:0;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden}
-thead th{position:sticky;top:0;color:white;background:#38b2ac;padding:12px;border-bottom:2px solid rgba(255,255,255,.08);text-align:left;font-weight:600;font-size:14px;cursor:pointer}
-tbody td{padding:12px;border-bottom:1px solid rgba(255,255,255,.05);font-size:14px}
-tbody tr:hover{background:#38b2ac}
-
-@media (max-width: 768px) {
-  #tablaRindes {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-}
 
 /* Acordeón */
 details{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:14px;margin-bottom:10px}
@@ -670,10 +652,10 @@ details summary{cursor:pointer;font-weight:600}
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 40%;          /* controla lo “corto” del subrayado */
-  height: 3px;         /* grosor del subrayado */
-  background-color: green; /* color verde */
-  border-radius: 2px;  /* esquinas redondeadas, más moderno */
+  width: 40%;         
+  height: 3px;        
+  background-color: green; 
+  border-radius: 2px; 
 }
   .custom-card .card-text{
     color:black;
@@ -1085,12 +1067,6 @@ color: #000000;
         padding: 0;
         box-sizing: border-box;
     }
-  
-    /* .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
-    } */
     
     .text-center {
         text-align: center;
@@ -1393,15 +1369,6 @@ color: #000000;
         background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffffff" opacity="0.1"/><circle cx="20" cy="80" r="0.5" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
         opacity: 0.3;
     }
-
-    /* .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-        position: relative;
-        z-index: 1;
-    } */
-
     .section-header {
         text-align: center;
         margin-bottom: 60px;
@@ -1619,4 +1586,55 @@ color: #000000;
   .contacto-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.productos {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.productos h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
 }
