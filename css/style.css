@@ -407,14 +407,19 @@ p, li, span {
 @media (max-width: 768px) {
  
   .indexproductos img.productos {
-    width: 100%;      
+    width: 100%;
+    height: auto;  
+    background-size: contain;    
   }
 
   .indexproductos .btn {
     padding: 0.7rem 1.4rem; 
+    
     font-size: 0.9rem;
   }
 }
+
+
 .indexproductos .btn {
   position: relative;
   z-index: 2;
